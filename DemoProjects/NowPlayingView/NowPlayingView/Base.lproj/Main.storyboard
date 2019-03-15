@@ -181,11 +181,19 @@
                                     <action selector="didPressSkipForward15Button:" destination="zJM-qG-Bbi" eventType="touchUpInside" id="tbZ-CJ-VpG"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENT-87-fJq">
+                                <rect key="frame" x="139.5" y="380" width="96" height="30"/>
+                                <state key="normal" title="Tap to Record"/>
+                                <connections>
+                                    <action selector="didTapRecord:" destination="zJM-qG-Bbi" eventType="touchUpInside" id="g5E-OP-VJZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pLa-TF-pjD" firstAttribute="centerY" secondItem="mKi-M6-Bpq" secondAttribute="centerY" id="0OB-wM-sj6"/>
                             <constraint firstItem="Odc-N8-LDo" firstAttribute="centerX" secondItem="v6q-Mo-xNc" secondAttribute="centerX" id="0wJ-t6-4Zq"/>
+                            <constraint firstItem="ENT-87-fJq" firstAttribute="centerX" secondItem="Yyg-5b-8gs" secondAttribute="centerX" id="2mh-rK-b8S"/>
                             <constraint firstItem="yki-Jd-CZo" firstAttribute="centerY" secondItem="8Dz-1I-gjk" secondAttribute="centerY" id="2yW-0f-GB2"/>
                             <constraint firstItem="Qc4-4t-Url" firstAttribute="baseline" secondItem="U87-v2-xCq" secondAttribute="baseline" id="6n5-od-Rg1"/>
                             <constraint firstItem="A9I-ga-uov" firstAttribute="trailing" secondItem="9jd-oj-npe" secondAttribute="trailing" id="6q9-fi-Ybp"/>
@@ -237,6 +245,7 @@
                             <constraint firstItem="9AB-7b-9eh" firstAttribute="trailing" secondItem="9jd-oj-npe" secondAttribute="trailing" id="sLv-c3-c1R"/>
                             <constraint firstItem="FJS-AJ-BPP" firstAttribute="centerX" secondItem="v6q-Mo-xNc" secondAttribute="centerX" id="sSv-A9-am2"/>
                             <constraint firstItem="b3G-wA-JJq" firstAttribute="baseline" secondItem="pk8-Gq-7sv" secondAttribute="baseline" id="srw-rO-oJ1"/>
+                            <constraint firstItem="Yyg-5b-8gs" firstAttribute="top" secondItem="ENT-87-fJq" secondAttribute="bottom" constant="3" id="tlz-9X-UZp"/>
                             <constraint firstItem="U87-v2-xCq" firstAttribute="trailing" secondItem="9AB-7b-9eh" secondAttribute="trailing" id="u8J-cV-lwm"/>
                             <constraint firstItem="KCu-h2-jId" firstAttribute="baseline" secondItem="Rgd-64-vVm" secondAttribute="baseline" id="uEX-aG-Aaw"/>
                             <constraint firstItem="9jd-oj-npe" firstAttribute="top" secondItem="KCu-h2-jId" secondAttribute="bottom" constant="31" id="uaQ-yQ-xrN"/>
@@ -257,6 +266,7 @@
                         <outlet property="playerStateSubscriptionButton" destination="Aon-sz-vRx" id="Jmw-vU-o8e"/>
                         <outlet property="podcastSpeedButton" destination="pLa-TF-pjD" id="NL5-fm-gyx"/>
                         <outlet property="prevButton" destination="7mT-Sj-PAA" id="Q0B-rp-6XI"/>
+                        <outlet property="recordButton" destination="ENT-87-fJq" id="J95-nA-ifD"/>
                         <outlet property="repeatModeLabel" destination="AKt-hg-oES" id="uLq-Ee-Wc0"/>
                         <outlet property="shuffleModeLabel" destination="dxM-Ud-hcN" id="Xj8-CV-jIj"/>
                         <outlet property="skipBackward15Button" destination="HsX-fx-HXS" id="L8V-vE-3JM"/>
